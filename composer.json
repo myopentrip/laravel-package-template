@@ -16,10 +16,15 @@
             "Myopentrip\\LaravelPackage\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Myopentrip\\LaravelPackage\\Tests\\": "tests"
+        }
+    },
     "authors": [
         {
-            "name": ":author_name",
-            "email": "domain@myopentrip.com",
+            "name": ":Bliss Jaspis",
+            "email": "bliss@myopentrip.com",
             "role": "developer"
         }
     ],
@@ -29,6 +34,10 @@
         "allow-plugins": {
             "pestphp/pest-plugin": true
         }
+    },
+    "scripts": {
+        "test": "vendor/bin/pest",
+        "test-coverage": "vendor/bin/pest --coverage"
     },
     "extra": {
         "laravel": {

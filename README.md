@@ -3,7 +3,7 @@ This is template for creating package on laravel.
 
 ### Installation
 ```php
-compose require :vendor_slug/:package_slug
+compose require myopentrip/laravel-package-template
 ```
 
 ### Usage
