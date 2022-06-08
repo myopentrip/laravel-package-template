@@ -1,28 +1,28 @@
 ## About Laravel Package
 This is template for creating package on laravel.
 
-### Installation
+## Installation
 ```php
-compose require myopentrip/laravel-package-template
+composer require myopentrip/laravel-package-template
 ```
 
-### Usage
+## Usage
 ```php
 $package = new Myopentrip\LaravelPackage();
 echo $package->sayhello();
 ```
 
-### Testing
+## Testing
 ```
 compose test
 ```
 
-### Changelog
+## Changelog
 Please see changelog for more update.
 
 ### Credits
 - [Bliss Jaspis](https://github.com/blissjaspis)
 - All Contributors
 
-### License
+## License
 The MIT license.
