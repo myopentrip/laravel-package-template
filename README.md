@@ -14,15 +14,15 @@ echo $package->sayhello();
 
 ## Testing
 ```
-compose test
+composer test
 ```
 
 ## Changelog
-Please see changelog for more update.
+See this [changelog](/CHANGELOG.md) for more update.
 
 ### Credits
 - [Bliss Jaspis](https://github.com/blissjaspis)
-- All Contributors
+- [All Contributors](https://github.com/myopentrip/laravel-package-template/graphs/contributors)
 
 ## License
 The MIT license.
