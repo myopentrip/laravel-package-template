@@ -1,0 +1,12 @@
+includes:
+    - phpstan.neon.dist
+
+parameters:
+    paths:
+        - src
+        - config
+    tmpDir: build/phpstan
+    level: 5
+    excludePaths:
+        - ./*/*/FileToBeExcluded.php
+    checkMissingIterableValueType: false

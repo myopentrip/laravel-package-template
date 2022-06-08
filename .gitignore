@@ -6,3 +6,4 @@ testbench.yaml
 phpunit.xml
 .phpunit.result.cache
 coverage
+build

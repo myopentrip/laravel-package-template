@@ -5,6 +5,7 @@
         "php": "^8.1"
     },
     "require-dev": {
+        "nunomaduro/larastan": "^2.0",
         "orchestra/testbench": "^7.0",
         "pestphp/pest": "^1.7",
         "pestphp/pest-plugin-laravel": "^1.1",
@@ -36,6 +37,7 @@
         }
     },
     "scripts": {
+        "analyse": "vendor/bin/phpstan analyse",
         "test": "vendor/bin/pest",
         "test-coverage": "vendor/bin/pest --coverage"
     },
