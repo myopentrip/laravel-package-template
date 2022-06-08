@@ -4,12 +4,9 @@ namespace Myopentrip\LaravelPackage\Tests;
 
 use Myopentrip\LaravelPackage\LaravelPackageServiceProvider;
 use Orchestra\Testbench\TestCase as TestbenchTestCase;
-use Illuminate\Foundation\Testing\RefreshDatabase;
 
 class TestCase extends TestbenchTestCase
 {
-    // use RefreshDatabase;
-
     protected function setUp(): void
     {
         parent::setUp();
@@ -20,7 +17,7 @@ class TestCase extends TestbenchTestCase
         return [LaravelPackageServiceProvider::class];
     }
 
-    protected function getEnvironmentSetUp($app)
+    public function getEnvironmentSetUp($app)
     {
         config()->set('database.default', 'testing');
     }

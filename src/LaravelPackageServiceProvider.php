@@ -3,6 +3,7 @@
 namespace Myopentrip\LaravelPackage;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Str;
 
 class LaravelPackageServiceProvider extends ServiceProvider
 {
@@ -19,7 +20,7 @@ class LaravelPackageServiceProvider extends ServiceProvider
         if ($this->app->runningInConsole()) {
             $this->publishes([
                 __DIR__ . '/../config/laravel-package.php' => config_path('laravel-package.php')
-            ]);
+            ], 'laravel-package-config');
 
             // Publishing the views.
             /*$this->publishes([
@@ -43,10 +44,16 @@ class LaravelPackageServiceProvider extends ServiceProvider
 
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__ . '../config/laravel-package.php', 'laravel-package');
+        $this->mergeConfigFrom($this->removeLeftDir(), 'laravel-package');
 
         $this->app->singleton('laravel-package', function(){
             return new LaravelPackage;
         });
+    }
+
+    private function removeLeftDir(String $pathConfig = '/config/laravel-package.php') : String
+    {
+        $result = Str::replace('/src', '', __DIR__);
+        return $result . $pathConfig;
     }
 }

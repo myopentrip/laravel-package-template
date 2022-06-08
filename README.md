@@ -1,5 +1,6 @@
 ## About Laravel Package
 This is template for creating package on laravel.
+
 [![Packagist Version](https://img.shields.io/packagist/v/myopentrip/laravel-package-template)](https://img.shields.io/packagist/v/myopentrip/laravel-package-template)
 [![Packagist Downloads](https://img.shields.io/packagist/dt/myopentrip/laravel-package-template)](https://img.shields.io/packagist/dt/myopentrip/laravel-package-template)
 [![Packagist PHP Version Support](https://img.shields.io/packagist/php-v/myopentrip/larave-package-template)](https://img.shields.io/packagist/php-v/myopentrip/larave-package-template)
